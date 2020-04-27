@@ -1,9 +1,10 @@
 .board{
   background-color: #EEEEEE;
   border: 1px solid rgb(93, 121, 93);
-  height: 400px;
-  width: 400px;
-  vertical-align: middle;
+  height: 350px;
+  width: 350px;  
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 .token{
@@ -15,8 +16,8 @@
   width: 23%;
   height: 23%;
   margin: 1%;
-  text-align: center;
-  vertical-align: middle;
+  text-align: center; 
+   
 }
 
 .emphyToken{
@@ -28,7 +29,6 @@
   width: 23%;
   height: 23%;
   margin: 1%;
-  text-align: center;
-  vertical-align: middle;
+  text-align: center; 
 }
  
