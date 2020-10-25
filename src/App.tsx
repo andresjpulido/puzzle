@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import PropTypes from 'prop-types';
+
 import Board from './components/board/Board';
 import Cronometer from './components/cronometer/Cronometer';
 
@@ -11,7 +11,7 @@ interface IProps {
 interface IState {
   minutes: number, 
   seconds: number,
-  tokens: object,
+  tokens: Array<any>,
   time: string;
 }
 
@@ -24,7 +24,10 @@ class App extends Component<IProps, IState> {
       seconds: 0,
       minutes: 0,
       time: '00:00'
-    }
+    }    
+  }
+
+  componentDidMount(){
     setInterval(this.cronometerOn, 1000);
   }
 
@@ -63,8 +66,7 @@ class App extends Component<IProps, IState> {
 
 
   render() {
-
-    console.log("invoke render ...")
+ 
     return (
       <div>
         <div className="App-header">
@@ -83,7 +85,7 @@ class App extends Component<IProps, IState> {
 export default App;
 
 function getTokens() {
-  console.log("invoke getTokens ...")
+ 
   var list = getRamdomValuesArray();
   var tokens = [
     [{ "id": 1, "value": list[0] }, { "id": 2, "value": list[1] }, { "id": 3, "value": list[2] }, { "id": 4, "value": list[3] }],
