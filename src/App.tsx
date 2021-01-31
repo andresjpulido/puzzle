@@ -70,7 +70,7 @@ class App extends Component<IProps, IState> {
     return (
       <div>
         <div className="App-header">
-          <h1 className="App-title">Welcome to Puzzle</h1>
+          <h1 className="App-title">Welcome to Puzzle!</h1>
           <p>Put in order the numbers using the blank space to move the tokens.</p>
         </div>
         <br />
